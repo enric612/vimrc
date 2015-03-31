@@ -30,7 +30,6 @@ Plugin 'tfnico/vim-gradle'	"Gradle
 " Temes
 Plugin 'endel/vim-github-colorscheme'		" Github
 Plugin 'altercation/vim-colors-solarized'	" Solarized
-Plugin 'sickill/monokai'			" Monokai
 Plugin 'benjaminwhite/Benokai'			" Benokai
 Plugin 'cschlueter/vim-wombat'			" Wombat
 Plugin 'chriskempson/vim-tomorrow-theme'	" Tomorrow Theme
@@ -87,6 +86,7 @@ set cursorline
 set cursorcolumn
 set showmatch
 
+colorscheme Tomorrow-Night-Eighties
 
 " ===============================
 " 6. Mapetjos i funcions
