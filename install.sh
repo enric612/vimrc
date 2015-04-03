@@ -5,7 +5,7 @@ echo "=================================================="
 echo "Decarregant vundle"
 echo "=================================================="
 git submodule add -f http://github.com/gmarik/vundle.git bundle/Vundle.vim
-
+git submodule update --init
 echo "=================================================="
 echo "Instal·lant dependencies per a YCM"
 echo "=================================================="
