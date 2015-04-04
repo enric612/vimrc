@@ -165,8 +165,8 @@ endif
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 "YCM
-let g:ycm_autoclose_preview_window_after_completion=0
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"let g:ycm_autoclose_preview_window_after_completion=0
+"nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "Neocomplete
 let g:acp_enableAtStartup = 0
