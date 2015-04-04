@@ -20,11 +20,17 @@ Plugin 'gmarik/vundle.vim'
 
 " Plugins
 
-Plugin 'bling/vim-airline'      " Airline
-Plugin 'scrooloose/nerdtree'	" NERDTree
-Plugin 'tpope/vim-fugitive'	" Fugitive
-Plugin 'majutsushi/tagbar'	" Tagbar
-
+Plugin 'bling/vim-airline'              " Airline
+Plugin 'scrooloose/nerdtree'	        " NERDTree
+Plugin 'tpope/vim-fugitive'	        " Fugitive
+Plugin 'majutsushi/tagbar'	        " Tagbar
+Plugin 'jeetsukumaran/vim-buffergator'  "Buffergator 
+                                        " Navegador de Buffers
+                                        " Enter Obrir
+                                        " <C-V> Obrir en split vertical
+                                        " <C-S> Obrir en split horitzontal
+                                        " <C-T> Obrir en nova pestanya
+                                        "
 " YCM Requereix compilar i es molest, per defecte el deixe deshabilitat
 " pero si es necesari es pot habilitar i recompilar una vegada instal·lat
 
@@ -126,12 +132,21 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Ctrl tab millor no?
-map <C-TAB> :tabn<CR>
-map <C-S-TAB> :tabp<CR>
+"map <C-TAB> :tabn<CR>
+""map <C-S-TAB> :tabp<CR>
+
+" Navegació per tabs com a Firefox
+nmap <C-S-h> :tabprevious<CR>
+nmap <C-l>   :tabnext<CR>
+nmap <C-t>     :tabnew<CR>
+imap <C-S-h> <Esc>:tabprevious<CR>i
+imap <C-l>   <Esc>:tabnext<CR>i
+imap <C-t>     <Esc>:tabnew<CR>
+
 
 " NERDTree map ===> ,nt per obrir/tancar
 command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
-nmap <Leader>nt :NERDTreeToggle<cr>
+nmap <Leader>n :NERDTreeToggle<cr>
 nmap <F8> :TagbarToggle<CR> 
 :let g:NERDTreeWinSize=20
 :let g:tagbar_width=20
