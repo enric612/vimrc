@@ -25,10 +25,11 @@ Plugin 'scrooloose/nerdtree'	" NERDTree
 Plugin 'tpope/vim-fugitive'	" Fugitive
 Plugin 'majutsushi/tagbar'	" Tagbar
 
-" YCM
+" YCM Requereix compilar i es molest, per defecte el deixe deshabilitat
+" pero si es necesari es pot habilitar i recompilar una vegada instal·lat
 
-Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
-Plugin 'SirVer/ultisnips'       " UltiSnipets
+"Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
+"Plugin 'SirVer/ultisnips'       " UltiSnipets
 Plugin 'honza/vim-snippets'     "Vim Snippets
 
 "NeoCompleteCache
