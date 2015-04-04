@@ -19,10 +19,11 @@ call vundle#begin()
 Plugin 'gmarik/vundle.vim'
 
 " Plugins
+Plugin 'bling/vim-airline'      " Airline
 Plugin 'scrooloose/nerdtree'	" NERDTree
 Plugin 'tpope/vim-fugitive'	" Fugitive
 Plugin 'majutsushi/tagbar'	" Tagbar
-Plugin 'Valloric/YouCompleteMe'	"YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
 
 " Suport per a llenguatges
 Plugin 'tfnico/vim-gradle'	"Gradle
@@ -86,7 +87,10 @@ set cursorline
 set cursorcolumn
 set showmatch
 
+set ruler
+
 colorscheme Tomorrow-Night-Eighties
+let g:airline_powerline_fonts = 1
 
 " ===============================
 " 6. Mapetjos i funcions
@@ -123,3 +127,17 @@ endfunction
 
 nmap <F5> :call ToggleRelativeNumber()<CR>
 imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
+
+" Ordres en majuscules
+if has("user_commands")
+    command! -bang -nargs=? -complete=file E e<bang> <args>
+    command! -bang -nargs=? -complete=file W w<bang> <args>
+    command! -bang -nargs=? -complete=file Wq wq<bang> <args>
+    command! -bang -nargs=? -complete=file WQ wq<bang> <args>
+    command! -bang Wa wa<bang>
+    command! -bang WA wa<bang>
+    command! -bang Q q<bang>
+    command! -bang QA qa<bang>
+    command! -bang Qa qa<bang>
+endif
+
