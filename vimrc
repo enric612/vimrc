@@ -141,3 +141,5 @@ if has("user_commands")
     command! -bang Qa qa<bang>
 endif
 
+" Airline
+let g:airline#extensions#tabline#enabled = 1

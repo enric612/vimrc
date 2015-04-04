@@ -14,6 +14,11 @@ sudo apt-get install build-essential cmake
 sudo apt-get install python-dev
 
 echo "=================================================="
+echo "Instal·lant ctags per a tagbar"
+echo "=================================================="
+sudo apt-get install exuberant-ctags
+
+echo "=================================================="
 echo "Linkant configuracions"
 echo "=================================================="
 mkdir ~/.vim
