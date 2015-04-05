@@ -99,8 +99,8 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 if &t_Co >= 256 || has("gui_running")
-    "color solarized
-   " set background=dark
+    colorscheme Tomorrow-Night-Eighties
+    set background=dark
 endif
 
 set showmode	
@@ -116,7 +116,6 @@ set showmatch
 
 set ruler
 
-colorscheme Tomorrow-Night-Eighties
 let g:airline_powerline_fonts = 1
 
 " ===============================
