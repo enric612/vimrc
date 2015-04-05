@@ -136,10 +136,10 @@ map <C-l> <C-w>l
 
 " Navegació per tabs com a Firefox
 nmap <C-S-h> :tabprevious<CR>
-nmap <C-l>   :tabnext<CR>
+nmap <C-S-l>   :tabnext<CR>
 nmap <C-t>     :tabnew<CR>
 imap <C-S-h> <Esc>:tabprevious<CR>i
-imap <C-l>   <Esc>:tabnext<CR>i
+imap <C-S-l>   <Esc>:tabnext<CR>i
 imap <C-t>     <Esc>:tabnew<CR>
 
 
