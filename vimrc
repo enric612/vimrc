@@ -130,11 +130,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Ctrl tab millor no?
-"map <C-TAB> :tabn<CR>
-""map <C-S-TAB> :tabp<CR>
-
-" Navegació per tabs com a Firefox
+" Navegació per tabs com a Firefox (Funciona tambe al Gnome Terminal)
 nmap <C-S-h> :tabprevious<CR>
 nmap <C-S-l>   :tabnext<CR>
 nmap <C-t>     :tabnew<CR>
