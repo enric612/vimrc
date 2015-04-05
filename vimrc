@@ -99,8 +99,8 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 if &t_Co >= 256 || has("gui_running")
-    color solarized
-    set background=dark
+    "color solarized
+   " set background=dark
 endif
 
 set showmode	
