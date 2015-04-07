@@ -7,12 +7,12 @@ echo "=================================================="
 git submodule add -f http://github.com/gmarik/vundle.git bundle/Vundle.vim
 git submodule update --init
 # You Complete me requereix compilar així que per defecte no es instal·lat
-#echo "=================================================="
-#echo "Instal·lant dependencies per a YCM"
-#echo "=================================================="
-#sudo apt-get update 
-#sudo apt-get install build-essential cmake 
-#sudo apt-get install python-dev
+echo "=================================================="
+echo "Instal·lant dependencies per a YCM"
+echo "=================================================="
+sudo apt-get update 
+sudo apt-get install build-essential cmake 
+sudo apt-get install python-dev
 
 echo "=================================================="
 echo "Instal·lant ctags per a tagbar"
@@ -33,10 +33,10 @@ echo "=================================================="
 vim +PluginInstall +qall
 
 
-#echo "=================================================="
-#echo "Compilant YCM (Beta)" 
-#echo "=================================================="
-#~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
+echo "=================================================="
+echo "Compilant YCM (Beta)" 
+echo "=================================================="
+~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
 
 echo "=================================================="
 echo "Fet!"
