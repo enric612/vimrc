@@ -34,21 +34,21 @@ Plugin 'jeetsukumaran/vim-buffergator'  "Buffergator
 " YCM Requereix compilar i es molest, per defecte el deixe deshabilitat
 " pero si es necesari es pot habilitar i recompilar una vegada instal·lat
 
-"Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
-"Plugin 'SirVer/ultisnips'       " UltiSnipets
+Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
+Plugin 'SirVer/ultisnips'       " UltiSnipets
 Plugin 'honza/vim-snippets'     "Vim Snippets
 
 "NeoCompleteCache
-Plugin 'Shougo/neocomplcache'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+"Plugin 'Shougo/neocomplcache'
+"Plugin 'Shougo/neosnippet'
+"Plugin 'Shougo/neosnippet-snippets'
 
 " NeoComplete
-Plugin 'Shougo/neocomplete'
+"Plugin 'Shougo/neocomplete'
 
 
 Plugin 'spf13/vim-autoclose'    " Autoclose
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 
 
 " Suport per a llenguatges
@@ -180,56 +180,56 @@ endif
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 "YCM
-"let g:ycm_autoclose_preview_window_after_completion=0
-"nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_autoclose_preview_window_after_completion=0
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "Neocomplete
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#enable_auto_delimiter = 1
-let g:neocomplete#max_list = 15
-let g:neocomplete#force_overwrite_completefunc = 1
-
-let g:neocomplete#sources#dictionary#dictionaries = {
-                        \ 'default' : '',
-                        \ 'vimshell' : $HOME.'/.vimshell_hist',
-                        \ 'scheme' : $HOME.'/.gosh_completions'
-                        \ }
-if !exists('g:neocomplete#sources#omni#input_patterns')
-                let g:neocomplete#sources#omni#input_patterns = {}
-            endif
-            let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-            let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-            let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-            let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-            let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
-
-let g:acp_enableAtStartup = 0
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_enable_auto_delimiter = 1
-let g:neocomplcache_max_list = 15
-let g:neocomplcache_force_overwrite_completefunc = 1 
-
-" Enable omni completion.
-            autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-            autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-            autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-            autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-            autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-            autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-            autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-
-            " Enable heavy omni completion.
-            if !exists('g:neocomplcache_omni_patterns')
-                let g:neocomplcache_omni_patterns = {}
-            endif
-            let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-            let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-            let g:neocomplcache_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-            let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-            let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
-            let g:neocomplcache_omni_patterns.go = '\h\w*\.\?'
+""let g:acp_enableAtStartup = 0
+""let g:neocomplete#enable_at_startup = 1
+""let g:neocomplete#enable_smart_case = 1
+""let g:neocomplete#enable_auto_delimiter = 1
+""let g:neocomplete#max_list = 15
+""let g:neocomplete#force_overwrite_completefunc = 1
+""
+""let g:neocomplete#sources#dictionary#dictionaries = {
+""                        \ 'default' : '',
+""                        \ 'vimshell' : $HOME.'/.vimshell_hist',
+""                        \ 'scheme' : $HOME.'/.gosh_completions'
+""                        \ }
+""if !exists('g:neocomplete#sources#omni#input_patterns')
+""                let g:neocomplete#sources#omni#input_patterns = {}
+""            endif
+""            let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+""            let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+""            let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+""            let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+""            let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
+""
+""let g:acp_enableAtStartup = 0
+""let g:neocomplcache_enable_at_startup = 1
+""let g:neocomplcache_enable_camel_case_completion = 1
+""let g:neocomplcache_enable_smart_case = 1
+""let g:neocomplcache_enable_underbar_completion = 1
+""let g:neocomplcache_enable_auto_delimiter = 1
+""let g:neocomplcache_max_list = 15
+""let g:neocomplcache_force_overwrite_completefunc = 1 
+""
+""" Enable omni completion.
+""            autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+""            autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+""            autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+""            autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+""            autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+""            autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+""            autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+""
+""            " Enable heavy omni completion.
+""            if !exists('g:neocomplcache_omni_patterns')
+""                let g:neocomplcache_omni_patterns = {}
+""            endif
+""            let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+""            let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+""            let g:neocomplcache_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+""            let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+""            let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
+""            let g:neocomplcache_omni_patterns.go = '\h\w*\.\?'
