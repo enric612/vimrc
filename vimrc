@@ -132,12 +132,21 @@ map <C-l> <C-w>l
 
 " Navegació per pestanyes  (Funciona tambe al Gnome Terminal)
 nmap <C-b> :tabprevious<CR>
-nmap <C-n>   :tabnext<CR>
-nmap <C-t>     :tabnew<CR>
+nmap <C-n> :tabnext<CR>
+nmap <C-t> :tabnew<CR>
+map <C-1> :1gt
+map <C-2> :2gt
+map <C-3> :3gt
+map <C-4> :4gt
+map <C-5> :5gt
+map <C-6> :6gt
+map <C-7> :7gt
+map <C-8> :8gt
+map <C-9> :9gt
+map <C-0> :tablast<CR>
 imap <C-b> <Esc>:tabprevious<CR>i
-imap <C-n>   <Esc>:tabnext<CR>i
-imap <C-t>     <Esc>:tabnew<CR>
-
+imap <C-n> <Esc>:tabnext<CR>i
+imap <C-t> <Esc>:tabnew<CR>
 
 " NERDTree map ===> ,nt per obrir/tancar
 command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
