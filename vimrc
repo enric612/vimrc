@@ -130,12 +130,12 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Navegació per tabs com a Firefox (Funciona tambe al Gnome Terminal)
-nmap <C-S-h> :tabprevious<CR>
-nmap <C-S-l>   :tabnext<CR>
+" Navegació per pestanyes  (Funciona tambe al Gnome Terminal)
+nmap <C-b> :tabprevious<CR>
+nmap <C-n>   :tabnext<CR>
 nmap <C-t>     :tabnew<CR>
-imap <C-S-h> <Esc>:tabprevious<CR>i
-imap <C-S-l>   <Esc>:tabnext<CR>i
+imap <C-b> <Esc>:tabprevious<CR>i
+imap <C-n>   <Esc>:tabnext<CR>i
 imap <C-t>     <Esc>:tabnew<CR>
 
 
