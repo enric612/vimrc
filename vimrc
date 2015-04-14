@@ -33,18 +33,10 @@ Plugin 'jeetsukumaran/vim-buffergator'  "Buffergator
                                         "
 " YCM Requereix compilar i es molest, per defecte el deixe deshabilitat
 " pero si es necesari es pot habilitar i recompilar una vegada instal·lat
-
 Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
 Plugin 'SirVer/ultisnips'       " UltiSnipets
 Plugin 'honza/vim-snippets'     "Vim Snippets
-
-"NeoCompleteCache
-"Plugin 'Shougo/neocomplcache'
-"Plugin 'Shougo/neosnippet'
-"Plugin 'Shougo/neosnippet-snippets'
-
-" NeoComplete
-"Plugin 'Shougo/neocomplete'
+Plugin ''cmaureir/snipmate-snippets-cuda'   " Snippets per a CUDA
 
 
 Plugin 'spf13/vim-autoclose'    " Autoclose
@@ -135,10 +127,14 @@ nmap <C-b> :tabprevious<CR>
 nmap <C-n> :tabnext<CR>
 nmap <C-t> :tabnew<CR>
 map <C-f> :tabfirst<CR>
-map <C-l> :tablast<CR>
+map <C-u> :tablast<CR>
 imap <C-b> <Esc>:tabprevious<CR>i
 imap <C-n> <Esc>:tabnext<CR>i
 imap <C-t> <Esc>:tabnew<CR>
+
+"Buffers
+map <f3> :bp<CR>
+map <f4> :bn<CR>
 
 " NERDTree map ===> ,nt per obrir/tancar
 command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
@@ -179,3 +175,18 @@ let g:airline#extensions#tabline#enabled = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
+" YouCompleteMe setup
+ "let g:ycm_filetype_blacklist={'unite': 1}
+ "let g:ycm_min_num_of_chars_for_completion = 1
+"
+" " UltiSnips setup
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" CUDA syntax
+ autocmd BufRead,BufNewFile *.cu set filetype=cpp
+ autocmd BufRead,BufNewFile *.cuh set filetype=cpp
