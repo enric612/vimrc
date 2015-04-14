@@ -36,7 +36,6 @@ Plugin 'jeetsukumaran/vim-buffergator'  "Buffergator
 Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
 Plugin 'SirVer/ultisnips'       " UltiSnipets
 Plugin 'honza/vim-snippets'     "Vim Snippets
-Plugin 'cmaureir/snipmate-snippets-cuda'   " Snippets per a nCUDA
 
 
 Plugin 'spf13/vim-autoclose'    " Autoclose
