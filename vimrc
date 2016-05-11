@@ -43,9 +43,6 @@ Plugin 'spf13/vim-autoclose'    " Autoclose
 "Plugin 'klen/python-mode'
 
 
-" Suport per a llenguatges
-Plugin 'tfnico/vim-gradle'	"Gradle
-
 " Temes
 Plugin 'endel/vim-github-colorscheme'		" Github
 Plugin 'altercation/vim-colors-solarized'	" Solarized
