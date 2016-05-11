@@ -34,8 +34,8 @@ Plugin 'jeetsukumaran/vim-buffergator'  "Buffergator
                                         "
 " YCM Requereix compilar i es molest, per defecte el deixe deshabilitat
 " pero si es necesari es pot habilitar i recompilar una vegada instal·lat
-Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
-Plugin 'rdnetto/YCM-Generator'  " YCM Generator
+"Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
+"Plugin 'rdnetto/YCM-Generator'  " YCM Generator
 Plugin 'SirVer/ultisnips'       " UltiSnipets
 Plugin 'honza/vim-snippets'     "Vim Snippets
 
@@ -43,9 +43,6 @@ Plugin 'honza/vim-snippets'     "Vim Snippets
 Plugin 'spf13/vim-autoclose'    " Autoclose
 "Plugin 'klen/python-mode'
 
-
-" Suport per a llenguatges
-Plugin 'tfnico/vim-gradle'	"Gradle
 
 " Temes
 Plugin 'endel/vim-github-colorscheme'		" Github
@@ -173,11 +170,11 @@ endif
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 "YCM
-let g:ycm_autoclose_preview_window_after_completion=1
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_path_to_python_interpreter = '/usr/bin/python'
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+"let g:ycm_autoclose_preview_window_after_completion=1
+"nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+"let g:ycm_key_list_select_completion=[]
+"let g:ycm_key_list_previous_completion=[]
 
 " YouCompleteMe setup
  "let g:ycm_filetype_blacklist={'unite': 1}
@@ -189,5 +186,5 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " CUDA syntax
- autocmd BufRead,BufNewFile *.cu set filetype=cuda
- autocmd BufRead,BufNewFile *.cuh set filetype=cuda
+ "autocmd BufRead,BufNewFile *.cu set filetype=cuda
+ "autocmd BufRead,BufNewFile *.cuh set filetype=cuda
