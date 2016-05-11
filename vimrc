@@ -1,4 +1,5 @@
 " Vimrc 
+"
 
 " ===============================
 " 1. Configuracion genèriques
