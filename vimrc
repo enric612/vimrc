@@ -35,7 +35,7 @@ Plugin 'jeetsukumaran/vim-buffergator'  "Buffergator
 " YCM Requereix compilar i es molest, per defecte el deixe deshabilitat
 " pero si es necesari es pot habilitar i recompilar una vegada instal·lat
 Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
-Plugin 'rdnetto/YCM-Generator'  " YCM Generator
+"Plugin 'rdnetto/YCM-Generator'  " YCM Generator
 Plugin 'SirVer/ultisnips'       " UltiSnipets
 Plugin 'honza/vim-snippets'     "Vim Snippets
 
@@ -191,3 +191,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " CUDA syntax
  autocmd BufRead,BufNewFile *.cu set filetype=cuda
  autocmd BufRead,BufNewFile *.cuh set filetype=cuda
+
+ " RC files
+ autocmd BufRead,BufNewFile *.rc set filetype=python
